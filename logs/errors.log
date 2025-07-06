@@ -1,0 +1,69 @@
+2025-07-06 13:03:59,352 - legal_platform - ERROR - Application startup failed: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "/project/sandbox/user-workspace/app/streamlit_app.py", line 995, in <module>
+    app = LegalDocumentApp()
+  File "/project/sandbox/user-workspace/app/streamlit_app.py", line 208, in __init__
+    self._load_models()
+  File "/project/sandbox/user-workspace/app/streamlit_app.py", line 248, in _load_models
+    self.document_processor, self.summarizer, self.ner_model = self._load_models()
+  File "/project/sandbox/user-workspace/app/streamlit_app.py", line 248, in _load_models
+    self.document_processor, self.summarizer, self.ner_model = self._load_models()
+  File "/project/sandbox/user-workspace/app/streamlit_app.py", line 248, in _load_models
+    self.document_processor, self.summarizer, self.ner_model = self._load_models()
+  [Previous line repeated 986 more times]
+RecursionError: maximum recursion depth exceeded
+2025-07-06 13:07:06,943 - legal_platform - ERROR - Application startup failed: LegalDocumentApp._load_models() missing 1 required positional argument: 'self'
+Traceback (most recent call last):
+  File "/project/sandbox/user-workspace/app/streamlit_app.py", line 999, in <module>
+    app = LegalDocumentApp()
+  File "/project/sandbox/user-workspace/app/streamlit_app.py", line 208, in __init__
+    self._load_models()
+  File "/project/sandbox/user-workspace/app/streamlit_app.py", line 248, in _load_models
+    result = LegalDocumentApp._load_models()
+TypeError: LegalDocumentApp._load_models() missing 1 required positional argument: 'self'
+2025-07-06 13:09:51,763 - legal_platform - ERROR - Application startup failed: LegalDocumentApp._load_models() missing 1 required positional argument: 'self'
+Traceback (most recent call last):
+  File "/project/sandbox/user-workspace/app/streamlit_app.py", line 999, in <module>
+    app = LegalDocumentApp()
+  File "/project/sandbox/user-workspace/app/streamlit_app.py", line 208, in __init__
+    self._load_models()
+  File "/project/sandbox/user-workspace/app/streamlit_app.py", line 248, in _load_models
+    result = self.__class__._load_models()
+TypeError: LegalDocumentApp._load_models() missing 1 required positional argument: 'self'
+2025-07-06 13:11:30,605 - legal_platform - ERROR - Failed to load models: Tesseract OCR not properly installed or configured
+Traceback (most recent call last):
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/pytesseract/pytesseract.py", line 275, in run_tesseract
+    proc = subprocess.Popen(cmd_args, **subprocess_args())
+  File "/usr/local/python/3.10.13/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/local/python/3.10.13/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'tesseract'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/project/sandbox/user-workspace/ingestion/ocr_pipeline.py", line 43, in _verify_tesseract
+    pytesseract.image_to_string(test_image)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/pytesseract/pytesseract.py", line 486, in image_to_string
+    return {
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/pytesseract/pytesseract.py", line 489, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/pytesseract/pytesseract.py", line 352, in run_and_get_output
+    run_tesseract(**kwargs)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/pytesseract/pytesseract.py", line 280, in run_tesseract
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/project/sandbox/user-workspace/app/streamlit_app.py", line 254, in _load_models
+    self.document_processor = LegalDocumentProcessor()
+  File "/project/sandbox/user-workspace/ingestion/document_ingestion.py", line 38, in __init__
+    self.ocr_processor = IndianLegalOCR()
+  File "/project/sandbox/user-workspace/ingestion/ocr_pipeline.py", line 36, in __init__
+    self._verify_tesseract()
+  File "/project/sandbox/user-workspace/ingestion/ocr_pipeline.py", line 57, in _verify_tesseract
+    raise OCRError(
+utils.error_handler.OCRError: Tesseract OCR not properly installed or configured
