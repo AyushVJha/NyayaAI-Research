@@ -1,38 +1,38 @@
-# 🏛️ AI-Powered Legal Document Intelligence Platform
+# NyayaAI: AI-Powered Legal Document Intelligence Platform
 
-## 📋 Overview
+## Overview
 
 A comprehensive AI-powered platform specifically designed for the **Indian Legal System** that automates the analysis of legal documents including court judgments, contracts, petitions, and other legal texts. This platform accelerates legal research and due diligence for legal professionals, law students, and researchers.
 
 ![Platform Demo](https://via.placeholder.com/800x400/1f4e79/ffffff?text=AI+Legal+Document+Intelligence+Platform)
 
-## 🎯 Key Features
+## Key Features
 
-### 🔍 **Advanced Document Processing**
-- **Multi-format Support**: PDF, DOCX, DOC, TXT, PNG, JPG, JPEG, TIFF
-- **Intelligent OCR**: Multi-language support for Indian legal documents
-- **Text Normalization**: Handles inconsistent formatting and multilingual content
-- **Section Extraction**: Automatically identifies key document sections
+### Advanced Document Processing
+- Multi-format Support: PDF, DOCX, DOC, TXT, PNG, JPG, JPEG, TIFF
+- OCR: Multi-language support for Indian legal documents
+- Text Normalization: Handles inconsistent formatting and multilingual content
+- Section Extraction: Automatically identifies key document sections
 
-### 🤖 **AI-Powered Analysis**
-- **Abstractive Summarization**: Longformer-based model for comprehensive summaries
-- **Entity Recognition**: Custom SpaCy NER for legal entities, citations, and clauses
-- **Bias Detection**: Built-in algorithmic bias mitigation for equitable outcomes
-- **Explainable AI**: Transparent decision-making with confidence scores
+### AI-Powered Analysis
+- Abstractive Summarization: Longformer-based model for comprehensive summaries
+- Entity Recognition: Custom SpaCy NER for legal entities, citations, and clauses
+- Bias Detection: Built-in algorithmic bias mitigation for equitable outcomes
+- Explainable AI: Transparent decision-making with confidence scores
 
-### 🎨 **Modern Web Interface**
-- **Interactive Dashboard**: Streamlit-based responsive web application
-- **Real-time Processing**: Live document analysis with progress tracking
-- **Visualization**: Charts and graphs for document analytics
-- **Export Capabilities**: JSON, PDF, and structured data export
+### Modern Web Interface
+- Interactive Dashboard: Streamlit-based responsive web application
+- Real-time Processing: Live document analysis with progress tracking
+- Visualization: Charts and graphs for document analytics
+- Export Capabilities: JSON, PDF, and structured data export
 
-### ⚖️ **Indian Legal System Optimization**
-- **Court Recognition**: Supports all major Indian courts and tribunals
-- **Citation Parsing**: Handles AIR, SCC, and other Indian legal citations
-- **Act & Section Identification**: Recognizes Indian legal acts and sections
-- **Multilingual Support**: English, Hindi, and regional Indian languages
+### Indian Legal System Optimization
+- Court Recognition: Supports all major Indian courts and tribunals
+- Citation Parsing: Handles AIR, SCC, and other Indian legal citations
+- Act & Section Identification: Recognizes Indian legal acts and sections
+- Multilingual Support: English, Hindi, and regional Indian languages
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.9+
@@ -78,7 +78,7 @@ docker run -p 8501:8501 legal-ai-platform
 4. Click "Process Document" to analyze
 5. Explore the results in different tabs
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 legal-document-intelligence/
@@ -105,7 +105,7 @@ legal-document-intelligence/
 └── README.md                     # This file
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 ```bash
@@ -121,9 +121,9 @@ MODEL_CACHE_DIR=/app/models/cache
 ```
 
 ### Supported File Formats
-- **Documents**: PDF, DOCX, DOC, TXT
-- **Images**: PNG, JPG, JPEG, TIFF, BMP
-- **Maximum file size**: 50MB (configurable)
+- Documents: PDF, DOCX, DOC, TXT
+- Images: PNG, JPG, JPEG, TIFF, BMP
+- Maximum file size: 50MB (configurable)
 
 ### Supported Languages
 - English (primary)
@@ -139,7 +139,7 @@ MODEL_CACHE_DIR=/app/models/cache
 - Punjabi (ਪੰਜਾਬੀ)
 - Urdu (اردو)
 
-## 🧪 Testing
+## Testing
 
 Run the comprehensive test suite:
 
@@ -156,54 +156,54 @@ pytest tests/test_pipeline.py -v
 pytest tests/ --cov=. --cov-report=html
 ```
 
-## 📊 Performance Metrics
+## Performance Metrics
 
 ### Processing Capabilities
-- **Document Processing**: 1-5 seconds per document
-- **OCR Processing**: 2-10 seconds per page
-- **Summarization**: 5-15 seconds per document
-- **Entity Extraction**: 1-3 seconds per document
+- Document Processing: 1-5 seconds per document
+- OCR Processing: 2-10 seconds per page
+- Summarization: 5-15 seconds per document
+- Entity Extraction: 1-3 seconds per document
 
 ### Accuracy Metrics
-- **OCR Accuracy**: 85-95% (depends on document quality)
-- **Entity Recognition**: 80-90% F1-score
-- **Summary Quality**: 75-85% ROUGE score
-- **Bias Detection**: <30% bias score threshold
+- OCR Accuracy: 85-95% (depends on document quality)
+- Entity Recognition: 80-90% F1-score
+- Summary Quality: 75-85% ROUGE score
+- Bias Detection: <30% bias score threshold
 
-## 🎓 Use Cases
+## Use Cases
 
 ### Legal Professionals
-- **Case Research**: Quickly analyze precedents and judgments
-- **Document Review**: Automated contract and agreement analysis
-- **Citation Verification**: Validate legal references and citations
-- **Brief Preparation**: Generate summaries for case preparation
+- Case Research: Quickly analyze precedents and judgments
+- Document Review: Automated contract and agreement analysis
+- Citation Verification: Validate legal references and citations
+- Brief Preparation: Generate summaries for case preparation
 
 ### Law Students & Researchers
-- **Academic Research**: Analyze large volumes of legal texts
-- **Case Study**: Extract key information from landmark judgments
-- **Comparative Analysis**: Compare legal principles across cases
-- **Learning Aid**: Understand complex legal documents
+- Academic Research: Analyze large volumes of legal texts
+- Case Study: Extract key information from landmark judgments
+- Comparative Analysis: Compare legal principles across cases
+- Learning Aid: Understand complex legal documents
 
 ### Legal Aid Organizations
-- **Pro Bono Work**: Efficient document analysis for free legal services
-- **Access to Justice**: Democratize legal document understanding
-- **Resource Optimization**: Maximize impact with limited resources
+- Pro Bono Work: Efficient document analysis for free legal services
+- Access to Justice: Democratize legal document understanding
+- Resource Optimization: Maximize impact with limited resources
 
-## 🔒 Security & Privacy
+## Security & Privacy
 
 ### Data Protection
-- **Local Processing**: Documents processed locally, not sent to external servers
-- **Temporary Storage**: Files automatically deleted after processing
-- **No Data Retention**: Platform doesn't store user documents
-- **Secure Deployment**: Docker containerization for isolated execution
+- Local Processing: Documents processed locally, not sent to external servers
+- Temporary Storage: Files automatically deleted after processing
+- No Data Retention: Platform doesn't store user documents
+- Secure Deployment: Docker containerization for isolated execution
 
 ### Bias Mitigation
-- **Algorithmic Fairness**: Built-in bias detection and reporting
-- **Demographic Parity**: Ensures equitable treatment across groups
-- **Transparency**: Explainable AI decisions with confidence scores
-- **Continuous Monitoring**: Regular bias audits and improvements
+- Algorithmic Fairness: Built-in bias detection and reporting
+- Demographic Parity: Ensures equitable treatment across groups
+- Transparency: Explainable AI decisions with confidence scores
+- Continuous Monitoring: Regular bias audits and improvements
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions from the legal and tech communities!
 
@@ -236,69 +236,69 @@ flake8 .
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📈 Roadmap
+## Roadmap
 
 ### Version 2.0 (Upcoming)
-- [ ] **Advanced NLP Models**: Integration with latest transformer models
-- [ ] **Multi-document Analysis**: Batch processing capabilities
-- [ ] **API Development**: RESTful API for integration
-- [ ] **Mobile App**: React Native mobile application
-- [ ] **Cloud Deployment**: AWS/Azure deployment options
+- Advanced NLP Models: Integration with latest transformer models
+- Multi-document Analysis: Batch processing capabilities
+- API Development: RESTful API for integration
+- Mobile App: React Native mobile application
+- Cloud Deployment: AWS/Azure deployment options
 
 ### Version 2.1 (Future)
-- [ ] **Real-time Collaboration**: Multi-user document analysis
-- [ ] **Advanced Visualizations**: Interactive legal knowledge graphs
-- [ ] **Custom Model Training**: User-specific model fine-tuning
-- [ ] **Integration Plugins**: MS Word, Google Docs plugins
+- Real-time Collaboration: Multi-user document analysis
+- Advanced Visualizations: Interactive legal knowledge graphs
+- Custom Model Training: User-specific model fine-tuning
+- Integration Plugins: MS Word, Google Docs plugins
 
-## 📞 Support
+## Support
 
 ### Documentation
-- **User Guide**: [Link to detailed user documentation]
-- **API Reference**: [Link to API documentation]
-- **Video Tutorials**: [Link to tutorial videos]
+- User Guide: [Link to detailed user documentation]
+- API Reference: [Link to API documentation]
+- Video Tutorials: [Link to tutorial videos]
 
 ### Community
-- **GitHub Issues**: Report bugs and request features
-- **Discussion Forum**: [Link to community forum]
-- **Email Support**: [support-email]
+- GitHub Issues: Report bugs and request features
+- Discussion Forum: [Link to community forum]
+- Email Support: [support-email]
 
 ### Professional Services
-- **Custom Development**: Tailored solutions for organizations
-- **Training & Workshops**: Legal AI training programs
-- **Consulting**: Implementation and optimization consulting
+- Custom Development: Tailored solutions for organizations
+- Training & Workshops: Legal AI training programs
+- Consulting: Implementation and optimization consulting
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 ### Research & Development
-- **University Legal Clinics**: For validation and feedback
-- **Legal Professionals**: For domain expertise and testing
-- **Open Source Community**: For foundational libraries and tools
+- University Legal Clinics: For validation and feedback
+- Legal Professionals: For domain expertise and testing
+- Open Source Community: For foundational libraries and tools
 
 ### Technology Partners
-- **Hugging Face**: For transformer models and libraries
-- **SpaCy**: For natural language processing capabilities
-- **Streamlit**: For rapid web application development
-- **Tesseract**: For optical character recognition
+- Hugging Face: For transformer models and libraries
+- SpaCy: For natural language processing capabilities
+- Streamlit: For rapid web application development
+- Tesseract: For optical character recognition
 
 ### Special Thanks
-- **Indian Legal System**: For providing rich, diverse legal corpus
-- **Pro Bono Legal Organizations**: For real-world validation
-- **Academic Institutions**: For research collaboration
+- Indian Legal System: For providing rich, diverse legal corpus
+- Pro Bono Legal Organizations: For real-world validation
+- Academic Institutions: For research collaboration
 
 ---
 
-## 📊 Project Statistics
+## Project Statistics
 
 ![GitHub stars](https://img.shields.io/github/stars/username/legal-document-intelligence?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/username/legal-document-intelligence?style=social)
 ![GitHub issues](https://img.shields.io/github/issues/username/legal-document-intelligence)
 ![GitHub license](https://img.shields.io/github/license/username/legal-document-intelligence)
 
-**Built with ❤️ for the Indian Legal Community**
+Built for the Indian Legal Community
 
-*Empowering legal professionals with AI-driven document intelligence*
+Empowering legal professionals with AI-driven document intelligence
