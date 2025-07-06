@@ -4,7 +4,7 @@
 
 A comprehensive AI-powered platform specifically designed for the **Indian Legal System** that automates the analysis of legal documents including court judgments, contracts, petitions, and other legal texts. This platform accelerates legal research and due diligence for legal professionals, law students, and researchers.
 
-![Platform Demo](https://via.placeholder.com/800x400/1f4e79/ffffff?text=AI+Legal+Document+Intelligence+Platform)
+![Platform Demo](https://dummyimage.com/800x400/1f4e79/ffffff.png&text=AI+Legal+Document+Intelligence+Platform)
 
 ## Key Features
 
